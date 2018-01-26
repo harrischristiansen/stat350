@@ -1,0 +1,1 @@
+Field	n	PercentTrades	942	20Design	599	37Health	5234	26MediaIT	3238	16Service	1378	18Other	2300	41

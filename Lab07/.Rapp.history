@@ -1,0 +1,64 @@
+bmdData <- read.table(file="ex12-45bmd.txt",header=T)#
+#
+boxplot(bmdData~Group,BMD)
+bmdData <- read.table(file="ex12-45bmd.txt",header=T)#
+#
+boxplot(BMD~Group,bmdData)
+bmdData <- read.table(file="ex12-45bmd.txt",header=T)#
+#
+boxplot(BMD~Group,bmdData,main="BMD Data Boxplot")
+trace <-rep(1,length(bmdData$Group))#
+interaction.plot(bmdData$Group,trace,bmdData$BMD,fun=mean,lengend=F)
+interaction.plot(bmdData$Group,trace,bmdData$BMD,fun=mean,lengend=F,main="BMD Effects Plot")
+boxplot(BMD~Treatment,bmdData,main="BMD Data Boxplot") # Boxplot
+trace <-rep(1,length(bmdData$Treatment))#
+interaction.plot(bmdData$Treatment,trace,bmdData$BMD,fun=mean,lengend=F,main="BMD Effects Plot")
+attach(bmdData)#
+tapply(BMD, Treatment, Length)
+attach(bmdData)#
+tapply(BMD, Treatment, length)
+tapply(BMD, Treatment, mean) # Mean#
+tapply(BMD, Treatment, sd) # Standard Deviation
+tapply(BMD, Treatment, length) # Sample Size#
+tapply(BMD, Treatment, mean) # Mean#
+tapply(BMD, Treatment, sd) # Standard Deviation
+library(lattice)
+qqmath(BMD | Treatment, data = bmdData, layout=c(3,1), panel = function(x) {#
+	panel.qqmath(x)#
+	panel.qqmathline(x)#
+	})
+qqmath(~BMD | Treatment, data = bmdData, layout=c(3,1), panel = function(x) {#
+	panel.qqmath(x)#
+	panel.qqmathline(x)#
+	})
+qqmath(~BMD | Treatment, data = bmdData, layout=c(3,1), panel = function(x) {#
+	panel.qqmath(x)#
+	panel.qqmathline(x)#
+	}, main="Problem A Part 2")
+fit <- aov(BMD ~ Treatment, bmdData)
+summary(fit)
+pairwise.t.test(bmdData$BMD, bmdData$Treatment, p.adjust="bon")
+boxplot(density~Group,boneData,main="Bone Data Boxplot") # Boxplot
+boneData <- read.table(file="ex12-47jump.txt",header=T)
+boxplot(density~Group,boneData,main="Bone Data Boxplot") # Boxplot
+boxplot(density~group,boneData,main="Bone Data Boxplot") # Boxplot
+trace <-rep(1,length(boneData$group))#
+interaction.plot(bmdData$group,trace,bmdData$density,fun=mean,lengend=F,main="Bone Data Effects Plot")
+trace <-rep(1,length(boneData$group))#
+interaction.plot(boneData$group,trace,boneData$density,fun=mean,lengend=F,main="Bone Data Effects Plot")
+attach(boneData)#
+tapply(density, group, length) # Sample Size#
+tapply(density, group, mean) # Mean#
+tapply(density, group, sd) # Standard Deviation
+library(lattice)#
+qqmath(~density | group, data = boneData, layout=c(3,1), panel = function(x) {#
+	panel.qqmath(x)#
+	panel.qqmathline(x)#
+	}, main="Problem B Part 2")
+fit <- aov(bensity ~ group, boneData)#
+summary(fit)
+fit <- aov(density ~ group, boneData)#
+summary(fit)
+test.Tukey <- TukeyHSD(fit, conf.level=0.95)#
+test.Tukey#
+plot(test.Tukey)

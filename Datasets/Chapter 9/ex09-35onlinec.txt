@@ -1,0 +1,1 @@
+Type	Response	CountPriv4	Yes	36Pub4	Yes	50Pri2	Yes	66Pub2	Yes	54Priv4	No	62Pub4	No	48Pri2	No	34Pub2	No	45

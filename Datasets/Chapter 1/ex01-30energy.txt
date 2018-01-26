@@ -1,0 +1,1 @@
+Month	Energy2011	Energy2010January	9.33	9.13February	8.13	8.21March	8.38	8.21April	7.54	7.37May	7.61	7.68June	7.92	8.01July	8.41	8.38August	8.43	8.44September	7.58	7.69October	7.61	7.51November	7.81	7.80December	8.60	9.23

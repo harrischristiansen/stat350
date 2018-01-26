@@ -1,0 +1,61 @@
+1+1
+hello
+x=2
+x
+history
+myTable = read.table("~/Downloads/statscourse.txt", header = TRUE)
+myTable = read.table("~/Downloads/statcourse.txt", header = TRUE)
+myTable
+myData = Table.read("~/Download/data.txt",Header=1)
+myData = read.table("~/Download/data.txt", header = TRUE)
+myData = read.table("~/Downloads/data.txt", header = TRUE)
+myData
+num5(myData)
+summary()
+summary(myData)
+sd(myData)
+sd(myData$MPG)
+lab2dataset = url("www.stat.purdue.edu/~jtroisi/STAT350Spring2015/labs/lab2/lab2dataset.txt", 'r')
+lab2dataset = url("http://www.stat.purdue.edu/~jtroisi/STAT350Spring2015/labs/lab2/lab2dataset.txt", 'r')
+data2 <­ read.table(file="ex01-73crp.txt",header=TRUE)
+data2
+data2 <­ read.table(file="ex01-73crp.txt",header=TRUE, sep= "\t")
+data2 <­ read.table(file="ex01-73crp.txt",header=TRUE)
+data2 <­ read.table(file="ex01-73cr2p.txt",header=TRUE)
+data2 <­ read.table(file="ex01-73crp.txt ",header=TRUE)
+data2 <­- read.table(file="ex01-73crp.txt",header=TRUE)
+data2 <­- read.table(file="ex01-73crp.txt ",header=TRUE)
+data2 <- read.table(file="ex01-73crp.txt",header=T)
+data2
+fivenum(data2
+q
+fivenum(data2)
+data2
+fivenum(data2)
+attach(data2)
+data2
+fivenum(data2)
+mean(data2)
+data2
+mean(data2)
+fivenum(data2$CRP)
+data2 <- read.table(file="ex01-73crp.txt",header=T)
+fivenum(data2$CRP)
+boxplot(data2$CRP)
+means = mean(data2$CRP)
+points(means, pch = 18)
+boxplot(data2$CRP)
+points(means, pch = 18)
+hist(data2$CRP)
+data1 <- read.table(file="earthdata.txt",header=T)
+data1 <- read.table(file="earthdensity.txt",header=T)
+data1
+fivenum(data1$Density)
+boxplot(data1$Density)
+means = mean(data1$Density)
+points(means, pch = 18)
+mean(data1$Density)
+sd(data1$Density)
+IQR(data2$CRP)
+fivenum(data2$CRP)
+IQR(data2$CRP)

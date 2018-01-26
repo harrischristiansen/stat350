@@ -1,0 +1,25 @@
+sales <- read.table(file="sales.txt", header=TRUE)
+sales <- read.table(file="sales.txt", header=TRUE)
+cor(sales$SalesPrice, sales$AssessedValue)
+attach(sales)#
+library(lattice)#
+xyplot(SalesPrice ~ AssessedValue, data = sales, panel=function(x,y) {#
+	panel.xyplot(x, y)#
+	panel.lmline(x, y)#
+}, main="Sales Data Scatterplot")
+sales.lm = lm(SalesPrice ~ AssessedValue)#
+sales.res = sales.lm$res#
+summary(sales.lm)
+sales.res
+xyplot(sales.res ~ AssessedValue, data=sales, main="Residual Plot For Sales", ylab="Residual", panel=function(x,y){#
+	panel.xyplot(x,y)#
+	panel.abline(h=0)#
+})
+hist(sales.res)
+qqplot(sales.res)
+qqnorm(sales.res)#
+qqline(sales.res)
+hist(sales.res, main="Histogram of Residuals for Sales")
+qqnorm(sales.res, main="QQPlot of Residuals for Sales")#
+qqline(sales.res)
+confint(sales.lm, level=0.99)

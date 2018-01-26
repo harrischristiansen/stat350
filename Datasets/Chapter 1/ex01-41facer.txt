@@ -1,0 +1,1 @@
+Region	Users	PopulationAfrica	40	1026Asia	195	3900Caribbean	6	39Central America	41	155Europe	233	818Middle East	20	213North America	173	347Oceana Austraila	14	36South America	113	402

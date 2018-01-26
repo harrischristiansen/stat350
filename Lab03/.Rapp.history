@@ -1,0 +1,140 @@
+1+1
+hello
+x=2
+x
+history
+myTable = read.table("~/Downloads/statscourse.txt", header = TRUE)
+myTable = read.table("~/Downloads/statcourse.txt", header = TRUE)
+myTable
+myData = Table.read("~/Download/data.txt",Header=1)
+myData = read.table("~/Download/data.txt", header = TRUE)
+myData = read.table("~/Downloads/data.txt", header = TRUE)
+myData
+num5(myData)
+summary()
+summary(myData)
+sd(myData)
+sd(myData$MPG)
+save.image()
+RandomData <­ rnorm(10,mean=2,sd=10)
+RandomData <- rnorm(10,mean=2,sd=10)
+RandomData
+hist(RandomData)
+std<­sd(RandomData)
+std<-sd(RandomData)
+m <­- mean(RandomData)
+m <­- mean(RandomData)
+m <- mean(RandomData)
+m
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+hist(RandomData)
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+lines(density(RandomData),col = "red", lwd=2)
+dev.new()
+qqnorm(RandomData,main="Normal Quantile Plot for normal distribution")
+qqline(RandomData)
+RandomData <­ rnorm(100,mean=2,sd=10)
+RandomData <­- rnorm(100,mean=2,sd=10)
+RandomData <<- rnorm(100,mean=2,sd=10)
+RandomData
+std<-sd(RandomData)
+m <­- mean(RandomData)
+m <- mean(RandomData)
+hist(RandomData)
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+lines(density(RandomData),col = "red", lwd=2)
+dev.new()
+qqnorm(RandomData,main="RandomData 100 Items Plot")
+qqline(RandomData)
+std
+m
+hist(RandomData)
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+curve(dnorm(25, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=25, add=TRUE)
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+hist(RandomData)
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+hist(RandomData, freq=FALSE)
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+lines(density(RandomData),col = "red", lwd=2)
+RandomData = 14.6036636   9.7652708  -0.5087833   7.1781533 -10.6465742  13.3485078   7.2435300 -11.3567801  18.5621415  -3.1189306
+Random Data <- [14.6036636   9.7652708  -0.5087833   7.1781533 -10.6465742  13.3485078   7.2435300 -11.3567801  18.5621415  -3.1189306]
+Random Data <- [14.6036636,   9.7652708,  -0.5087833,   7.1781533, -10.6465742,  13.3485078,   7.2435300, -11.3567801,  18.5621415,  -3.1189306]
+Random Data <- c(14.6036636,   9.7652708,  -0.5087833,   7.1781533, -10.6465742,  13.3485078,   7.2435300, -11.3567801,  18.5621415,  -3.1189306)
+RandomData <- c(14.6036636,   9.7652708,  -0.5087833,   7.1781533, -10.6465742,  13.3485078,   7.2435300, -11.3567801,  18.5621415,  -3.1189306)
+RandomData
+hist(RandomData, freq=FALSE)
+std<-sd(RandomData)
+m <- mean(RandomData)
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+lines(density(RandomData),col = "red", lwd=2)
+hist(RandomData, freq=FALSE)
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+clear
+RightSkewed <- rexp(n,rate=2)
+n = 100
+RightSkewed <- rexp(n,rate=2)
+LeftSkewed <- rbeta(n,2,0.5,ncp=2)
+ShortTailed <- runif(n,min=0,max=2)
+LongTailed <- rcauchy(n,location=0,scale=1)
+RightSkewed
+LeftSkewed
+ShortTailed
+LongTailed
+dataSet <- RightSkewed
+title <- "Right Skewed Data"
+hist(dataSet, xlab=“Data”, freq=FALSE, main=title)
+hist(dataSet, freq=FALSE, main=title)
+std <- sd(dataSet)
+m <- mean(dataSet)
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+lines(density(dataSet,adjust=3),col = "red", lwd=2)
+dev.new()
+qqnorm(dataSet,main=title)
+qqline(dataSet)
+dataSet <- LeftSkewed
+title <- "Left Skewed Data"
+hist(dataSet, freq=FALSE, main=title)
+std <- sd(dataSet)
+m <- mean(dataSet)
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+lines(density(dataSet,adjust=3),col = "red", lwd=2)
+dev.new()
+qqnorm(dataSet,main=title)
+qqline(dataSet)
+dataSet <- ShortSkewed
+dataSet <- ShortTailed
+title <- "Left Skewed Data"
+title <- "Short Tailed Data"
+hist(dataSet, freq=FALSE, main=title)
+std <- sd(dataSet)
+m <- mean(dataSet)
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+lines(density(dataSet,adjust=3),col = "red", lwd=2)
+dev.new()
+qqnorm(dataSet,main=title)
+qqline(dataSet)
+dataSet <- LongTailed
+title <- "Long Tailed Data"
+hist(dataSet, freq=FALSE, main=title)
+std <- sd(dataSet)
+m <- mean(dataSet)
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+lines(density(dataSet,adjust=3),col = "red", lwd=2)
+dev.new()
+qqnorm(dataSet,main=title)
+qqline(dataSet)
+calls <- read.table(file=“eg01-15calls80.txt”,header=T)
+calls <- read.table(file="eg01-15calls80.txt",header=T)
+calls
+hist(calls$length, freq=FALSE, main=“Support Calls”)
+hist(calls$length, freq=FALSE, main="Support Calls")
+std <- sd(calls$length)
+m <- mean(calls$length)
+curve(dnorm(x, mean=m, sd=std), col="blue", lwd=2, add=TRUE)
+lines(density(calls$length,adjust=3),col = "red", lwd=2)
+dev.new()
+qqnorm(calls$length,main=“Support Calls”)
+qqnorm(calls$length,main="Support Calls")
+qqline(calls$length)

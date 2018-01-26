@@ -1,0 +1,1 @@
+Provider	Subscribers	RatingComcast	17.0	9.25TimeWarner	9.7	8.60AT&T	17.8	8.53Cox	3.9	8.38Optimum	3.3	8.20Charter	5.5	7.88Verizon	4.3	7.63CenturyLink	6.4	7.58SuddenLink	1.4	7.38EarthLink	1.6	7.20
